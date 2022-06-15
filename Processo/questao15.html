@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Questão 15</title>
+    <meta charset="utf-8">
+    <style>
+        .test {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-flow: column;
+        }
+        .box1 {
+            padding: 25px;
+            text-align: center;
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box2 {
+            padding: 100px;
+            text-align: center;
+            background-color: blue;
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .box3 {
+            padding: 95px;
+            text-align: center;
+            background-color: gray;
+            grid-column-start: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .box4 {padding: 95px;
+            text-align: center;
+            background-color: pink;
+            grid-column-start: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .box5 {
+            padding: 25px;
+            text-align: center;
+            background-color: purple;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="test">
+        <div class="box1">Header</div>
+        <div class="box2">Menu</div>
+        <div class="box3">Main</div>
+        <div class="box4">Right</div>
+        <div class="box5">Footer</div>
+    </div>
+  </body>
+</html>
